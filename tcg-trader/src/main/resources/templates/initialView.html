@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="../static/css/initialView/initialView.css"
+        th:href="@{/css/initialView/initialView.css}"
+        rel="stylesheet"/>
+        <link
+        href="../static/css/initialView/loginRegisterStyle.css"
+        th:href="@{/css/initialView/loginRegisterStyle.css}"
+        rel="stylesheet"/>
+    <title>Welcome to TCG-Trader</title>
+</head>
+<body>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0" nonce="5WhrNJ6Q"></script>
+<div class="toolbar">
+    <div class="logo">TCG-Trader</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Register</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+    <section class="container forms">
+        <div class="form login">
+            <div class="form-content">
+                <header>Login</header>
+                <form action="#">
+                    <div class="field input-field">
+                        <input type="email" placeholder="Email" class="input">
+                    </div>
+                    <div class="field input-field">
+                        <input type="password" placeholder="Password" class="password">
+                        <i class='bx bx-hide eye-icon'></i>
+                    </div>
+                    <div class="form-link">
+                        <a href="#" class="forgot-pass">Forgot password?</a>
+                    </div>
+                    <div class="field button-field">
+                        <button>Login</button>
+                    </div>
+                </form>
+                <div class="form-link">
+                    <span>Don't have an account? <a href="#" class="link signup-link">Signup</a></span>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="media-options">
+                <div class="fbBTNContainer">
+                    <div class="fb-login-button" data-auto-logout-link="false" data-use-continue-as="false"></div>
+                </div>
+                    <!-- <a href="#" class="field facebook">
+                        <i class='bx bxl-facebook facebook-icon'></i>
+                        <span>Login with Facebook</span>
+                    </a> -->
+            </div>
+            <div class="media-options">
+                <a href="#" class="field google">
+                    <!-- <img th:src="@{static/Images/Icons/google.png}" alt="" class="google-img"> -->
+                    <!-- <span>Login with Google</span> -->
+                </a>
+            </div>
+        </div>
+            <!-- Signup Form -->
+        <div class="form signup">
+            <div class="form-content">
+                <header>Signup</header>
+                <form action="#"><div>
+                    <div class="field input-field">
+                        <input type="email" placeholder="Email" class="input">
+                    </div>
+                    <div class="field input-field">
+                        <input type="password" placeholder="Create password" class="password">
+                    </div>
+                    <div class="field input-field">
+                        <input type="password" placeholder="Confirm password" class="password">
+                        <i class='bx bx-hide eye-icon'></i>
+                    </div>
+                    <div class="field button-field">
+                        <button>Signup</button>
+                    </div>                                
+                </form>
+                <div class="form-link">
+                    <span>Already have an account? <a href="#" class="link login-link">Login</a></span>
+                </div>                
+                <div class="line"></div>
+                <div class="media-options">
+                    <a href="#" class="field facebook">
+                        <i class='bx bxl-facebook facebook-icon'></i>
+                        <span>Login with Facebook</span>
+                    </a>
+                </div>
+                <div class="media-options">
+                    <a href="#" class="field google">
+                        <!-- <img th:src="@{static/Images/Icons/google.png}" alt="" class="google-img">
+                        <span>Login with Google</span> -->
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript"
+        th:src="@{/JS/initialView/orbs.js}">      
+    </script>
+    
+    <script type="text/javascript"
+        th:src="@{/JS/initialView/loginRegister.js}">      
+    </script>
+    
+</body>
+</html>

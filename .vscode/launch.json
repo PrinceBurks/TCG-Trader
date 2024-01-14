@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-TcgTraderApplication<tcg-trader>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.trader.tcgtrader.TcgTraderApplication",
+            "projectName": "tcg-trader",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

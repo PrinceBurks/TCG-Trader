@@ -1,0 +1,100 @@
+body {
+    background-image: url('/Images/initialView/RegisterLoginBackground.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center; /* Optional: Adjust the position as needed */
+    margin: 0; /* Optional: Remove default body margin */
+    height: 100vh; /* Optional: Make sure body takes the full height of the viewport */
+    overflow: hidden; /* Optional: Prevent horizontal scrollbar if image is wider than the viewport */
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* tcg-trader\src\main\resources\static\Images\RegisterLoginBackground.jpg */
+.toolbar {
+    background-color: #333333ba; /* Adjust the background color */
+    color: white; /* Adjust the text color */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white; /* Adjust the link color */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+
+}
+
+nav a:hover {
+    color: #dad2db; /* Adjust the link color on hover */
+}
+
+.orb {
+    position: absolute;
+    background-color: rgb(228, 188, 228);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    animation: moveOrb 10s linear infinite, glow 10s infinite alternate;
+  }
+
+
+  @keyframes moveOrb {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(calc(0vw - 10px), calc(100vh - 10px));
+    }
+  }
+
+  @keyframes glow {
+    from {
+      box-shadow: 0 0 40px #f0f, 0 0 20px #f0f, 0 0 30px #f0f;
+    }
+    to {
+      box-shadow: 100px 105px 50px #f0f, 0 0 30px #f0f, 0 0 40px #f0f;
+    }
+  }
+
+  .star {
+    position: absolute;
+    background-color: #fff;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    animation: floatStar 10s linear infinite, glow 1s infinite alternate;
+  }
+
+  @keyframes floatStar {
+    0%, 100% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(50vw, 20vh);
+    }
+    50% {
+      transform: translate(80vw, 60vh);
+    }
+    75% {
+      transform: translate(20vw, 80vh);
+    }
+  }
